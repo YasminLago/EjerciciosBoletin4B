@@ -6,33 +6,36 @@ public class Consumo {
     //Constructores
     public Consumo(float km,float litros,float vMed,float pGas){    
     }
+    
     public Consumo(){
     }
     
     //Metodos
-    public int getTempo(){
-        return tempo;
+    public float getTempo(float km,float vMed){
+        return km/vMed;
+    }
+     
+    public void setKms(float km){
+        this.km=km;
     }
     
-    public int setKms(){
+    public void setLitros(float litros){
+        this.litros=litros;
     }
     
-    public float setLitros(){
-        
+    public void setvMed(float vMed){
+        this.vMed=vMed;
     }
     
-    public int setvMed(){
-        
+    public void setpGas(float pGas){
+        this.pGas=pGas;
     }
-    public float stPGas(){
-        
-    }
-    
-    public float calcularConsumoMedio(){
+    public float calcularConsumoMedio(float litros,float km){
+        return litros/(km*100);
     }
     
-    public float calcularConsumoEuros(){
-    }
-    
+    public float calcularConsumoEuros(float pGas,float km){
+        return pGas/(km*100);
+    }  
 }
 
