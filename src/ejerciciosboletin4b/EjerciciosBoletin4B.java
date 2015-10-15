@@ -9,12 +9,12 @@ public class EjerciciosBoletin4B {
     
     
     float litros=50f,pGas=1.57f,km,vMed; //Declaración de variables
-       String resultado=JOptionPane.showInputDialog("Km");
-             km=Float.parseFloat(resultado);
+       String resultado=JOptionPane.showInputDialog("Km");//Visualiza km y entrada por teclado
+             km=Float.parseFloat(resultado);//Pasar de String a flout
        String resultado1=JOptionPane.showInputDialog("Velocidade media");
             vMed=Float.parseFloat(resultado1);
        Consumo cons1=new Consumo(km,litros,vMed,pGas); //Creación de obxeto con parámetros
-       JOptionPane.showMessageDialog(null,"Consumo medio"+cons1.calcularConsumoMedio(litros, km));
+       JOptionPane.showMessageDialog(null,"Consumo medio"+cons1.calcularConsumoMedio(litros, km));//
     
     }  
     }
