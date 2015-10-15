@@ -13,6 +13,26 @@ public class Consumo {
     public int getTempo(){
         return tempo;
     }
-    publoc float calcularConsumo()
+    
+    public int setKms(){
+    }
+    
+    public float setLitros(){
+        
+    }
+    
+    public int setvMed(){
+        
+    }
+    public float stPGas(){
+        
+    }
+    
+    public float calcularConsumoMedio(){
+    }
+    
+    public float calcularConsumoEuros(){
+    }
+    
 }
 
