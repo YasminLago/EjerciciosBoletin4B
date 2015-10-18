@@ -11,10 +11,16 @@ public class Consumo {
     }
     
     //Metodos
-    public float getTempo(float km,float vMed){
-        return km/vMed;
+    public float getTempo(){
+        float tempo;
+        return tempo=km/vMed;
     }
-     
+   
+      public float getvMed(){
+        float tempo = 0;
+        return (km/tempo);
+    }
+      
     public void setKms(float km){
         this.km=km;
     }
@@ -31,11 +37,11 @@ public class Consumo {
         this.pGas=pGas;
     }
     public float calcularConsumoMedio(float litros,float km){
-        return litros/(km*100);
+        return (litros/(km*100));
     }
     
     public float calcularConsumoEuros(float pGas,float km){
-        return pGas/(km*100);
+        return (pGas/(km*100));
     }  
 }
 
